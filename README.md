@@ -11,3 +11,5 @@ In order to use this plugin you will need to create a webhook on your Discord se
 
 
 <img width="1021" alt="Screen Shot 2020-12-15 at 4 41 53 PM" src="https://user-images.githubusercontent.com/13265450/109745517-9b42ef80-7b99-11eb-82f9-63f8ea590e8c.png">
+
+This plugin is about 90% https://github.com/ATremonte/Discord-Level-Notifications
