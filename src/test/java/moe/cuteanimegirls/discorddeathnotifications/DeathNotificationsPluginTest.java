@@ -1,13 +1,13 @@
-package com.example;
+package moe.cuteanimegirls.discorddeathnotifications;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class ExamplePluginTest
+public class DeathNotificationsPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(ExamplePlugin.class);
+		ExternalPluginManager.loadBuiltin(DeathNotificationsPlugin.class);
 		RuneLite.main(args);
 	}
 }
