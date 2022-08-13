@@ -63,9 +63,18 @@ public class DeathNotificationsPlugin extends Plugin
 
 	private void sendMessage()
 	{
-		String deathString = client.getLocalPlayer().getName();
+		String playerName = client.getLocalPlayer().getName();
 
-		deathString += " died lmfao.";
+		String deathString;
+
+		if (config.includeName())
+		{
+			deathString = String.format("%s %s", playerName, config.deathMessage());
+		}
+		else
+		{
+			deathString = config.deathMessage();
+		}
 
 		DiscordWebhookBody discordWebhookBody = new DiscordWebhookBody();
 		discordWebhookBody.setContent(deathString);
