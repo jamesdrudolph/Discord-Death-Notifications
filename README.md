@@ -1,5 +1,6 @@
 # Discord Death Notifications
-This is a plugin for RuneLite which sends a message to your Discord channel when you die. The message includes your username and a screenshot as proof.
+This is a plugin for RuneLite which sends a message to your Discord channel when you die. The message includes your username and a screenshot as proof.<br/>
+Multiple webhook urls can be entered seperated by new lines.
 
 ![image](https://user-images.githubusercontent.com/5000401/136670335-c852af31-11ba-4bcc-8371-47239764b53a.png)
 
