@@ -69,7 +69,7 @@ public class DeathNotificationsPlugin extends Plugin
 
 		if (config.includeName())
 		{
-			deathString = String.format("%s %s", playerName, config.deathMessage());
+			deathString = String.format("**%s** %s", playerName, config.deathMessage());
 		}
 		else
 		{
