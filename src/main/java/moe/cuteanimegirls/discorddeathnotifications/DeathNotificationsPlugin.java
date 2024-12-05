@@ -32,6 +32,8 @@ import static net.runelite.http.api.RuneLiteAPI.GSON;
 )
 public class DeathNotificationsPlugin extends Plugin
 {
+	private long lastMessageSendTime = 0;
+
 	@Inject
 	private Client client;
 
@@ -53,6 +55,13 @@ public class DeathNotificationsPlugin extends Plugin
 	@Subscribe
 	public void onActorDeath(ActorDeath actorDeath)
 	{
+		long currTime = System.currentTimeMillis();
+		if (currTime - lastMessageSendTime < 3000)  // default to 3 second timeout
+		{
+			return;
+		}
+		lastMessageSendTime = currTime;
+		
 		Actor actor = actorDeath.getActor();
 		if (actor instanceof Player)
 		{
